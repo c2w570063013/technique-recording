@@ -13,20 +13,20 @@ to ensure the speed. Head to https://mirror.tuna.tsinghua.edu.cn/help/debian/
 and get the right source list**
 - 0.switch to the domestic source list first
 ```shell script
-sudo mv /etc/apt/sources.list /etc/apt/sources.list_back
-sudo touch /etc/apt/sources.list # fill this file with domestic source
-sudo apt update
+mv /etc/apt/sources.list /etc/apt/sources.list_back
+touch /etc/apt/sources.list # fill this file with domestic source
+apt update
 ```
 
 - 1.Install pip3
 ```shell script
-sudo apt update
-sudo apt install python3-pip
+apt update
+apt install python3-pip
 ```
 
 - 2.Install shadowsocks3 from github.
 ```shell script
-sudo pip3 install -U git+https://github.com/shadowsocks/shadowsocks.git@master
+pip3 install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 ```
 - 3.Check out the shadowscoks version
 ```shell script
@@ -55,7 +55,7 @@ vim /etc/shadowsocks/config.conf
 
 5.Install polipo to make it be able to pass GFW on terminal
 ```shell script
-sudo apt-get install polipo
+apt-get install polipo
 ```
 6.Edit polipo config
 ```shell script
@@ -70,13 +70,13 @@ logLevel=4
 
 - 7.Restart polipo
 ```shell script
-sudo service polipo stop
-sudo service polipo start
+service polipo stop
+service polipo start
 ```
 
 - 8.Start shadowsocks on background
 ```shell script
-sudo sslocal -c /etc/shadowsocks/config.json -d start
+sslocal -c /etc/shadowsocks/config.json -d start
 ```
 
 - 9.Export http_proxy and https_proxy on your current terminal to 
@@ -95,7 +95,7 @@ congratulations.
 
 - 00.switch back to your former source list
  ```shell script
-sudo mv /etc/apt/sources.list /etc/apt/sources.list_back2
-sudo mv /etc/apt/sources.list_back /etc/apt/sources.list
-sudo apt update
+mv /etc/apt/sources.list /etc/apt/sources.list_back2
+mv /etc/apt/sources.list_back /etc/apt/sources.list
+apt update
 ```

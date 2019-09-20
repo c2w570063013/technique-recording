@@ -1,8 +1,8 @@
 ## Set up a shadowsocks server on VPS(with Ubuntu or Debian OS)
 ### 1.Install shadowsocks3.0
 ```shell script
-sudo apt install python3-pip
-sudo pip3 install -U git+https://github.com/shadowsocks/shadowsocks.git@master
+apt install python3-pip
+pip3 install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 ssserver --version
 ``` 
 ### 2.create a config for shadowsocks
@@ -37,7 +37,7 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 ```
 Restart system
 ```shell script
-sudo reboot
+reboot
 ```
 
 ### 5.Check out if BBR has already opened
