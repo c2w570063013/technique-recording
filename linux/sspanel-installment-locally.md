@@ -170,7 +170,7 @@ nginx -s reload
 mysql -u root -p
 mysql>CREATE DATABASE your_database;
 mysql>use your_database;
-mysql>source /var/www/your_database/sql/glzjin_all.sql;
+mysql>source /var/www/your_domain/sql/glzjin_all.sql;
 mysql>exit
 ```
 
