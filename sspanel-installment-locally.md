@@ -86,11 +86,6 @@ ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai >
 
 #### 7. Install the latest nginx
 ```shell script
-apt install curl gnupg2 ca-certificates lsb-release
-echo "deb http://nginx.org/packages/debian `lsb_release -cs` nginx"  |  tee /etc/apt/sources.list.d/nginx.list
-curl -fsSL https://nginx.org/keys/nginx_signing.key |  apt-key add -
-apt-key fingerprint ABF5BD827BD9BF62
-apt update
 apt install nginx
 apt install -y nginx-extras
 nginx -v
