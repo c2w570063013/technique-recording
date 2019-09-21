@@ -1,4 +1,4 @@
-##Git Clone From Github
+## Git Clone From Github
 ### Speed up the clone on a proxy-terminal
 If you are using proxy on terminal and trying to clone a repository
 from github, it's better to use 'Clone with Https' than 'Clone with
