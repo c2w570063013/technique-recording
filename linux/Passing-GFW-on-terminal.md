@@ -13,9 +13,9 @@ to ensure the speed. Head to https://mirror.tuna.tsinghua.edu.cn/help/debian/
 and get the right source list**
 - 0.switch to the domestic source list first
 ```shell script
+apt install apt-transport-https #install apt-transport-https first
 mv /etc/apt/sources.list /etc/apt/sources.list_back
 touch /etc/apt/sources.list # fill this file with domestic source
-apt update
 ```
 
 - 1.Install pip3
@@ -63,7 +63,7 @@ vim /etc/polipo/config
 ```
 Add these three lines:
 ```yaml
-socksParentProxy = “localhost:1080”
+socksParentProxy = "localhost:1080"
 socksProxyType = socks5
 logLevel=4
 ```
@@ -72,11 +72,12 @@ logLevel=4
 ```shell script
 service polipo stop
 service polipo start
+service polipo status
 ```
 
 - 8.Start shadowsocks on background
 ```shell script
-sslocal -c /etc/shadowsocks/config.json -d start
+sslocal -c /etc/shadowsocks/config.conf -d start
 ```
 
 - 9.Export http_proxy and https_proxy on your current terminal to 

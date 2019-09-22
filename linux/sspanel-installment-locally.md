@@ -26,7 +26,7 @@ for vagrant configuration.
 ```shell script
 mkdir your_folder
 cd your_folder
-vagrant int generic/debian9 # checkout more debian box on https://app.vagrantup.com/debian/boxes/stretch64
+vagrant init generic/debian9 # checkout more debian box on https://app.vagrantup.com/debian/boxes/stretch64
 ```
 
 - Edit config 'Vagrantfile'
