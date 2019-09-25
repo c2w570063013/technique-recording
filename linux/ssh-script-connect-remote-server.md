@@ -1,0 +1,16 @@
+### SSH connect to remote server without using pub_key
+1.create a file at '/usr/local/bin/' or somewhere else where the $PATH was assigned
+```shell script
+#!/usr/bin/expect
+set user root  
+set ipaddress your_address
+set passwd your_password
+set timeout 30
+
+spawn ssh $user@$ipaddress
+expect {
+    "*password:" { send "$passwd\r" }
+    "yes/no" { send "yes\r";exp_continue }
+}
+interact
+```
