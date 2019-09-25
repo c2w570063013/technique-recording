@@ -24,7 +24,7 @@ vim /etc/shadowsocks/config.conf
 ### 3.Start shadowsocks
 Running on terminal manually
 ```shell script
-ssserver -c /etc/shadowsocks/config.json
+ssserver -c /etc/shadowsocks/config.conf
 ```
 Or running on background
 ```shell script
