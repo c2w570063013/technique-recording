@@ -28,7 +28,7 @@ ssserver -c /etc/shadowsocks/config.conf
 ```
 Or running on background
 ```shell script
-ssserver -c /etc/shadowsocks/config.json -d start
+ssserver -c /etc/shadowsocks/config.conf -d start
 ``` 
 ### 4.Enable BBR to increase speed
 Install BBR  

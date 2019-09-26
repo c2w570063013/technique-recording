@@ -86,7 +86,6 @@ ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai >
 
 #### 7. Install the latest nginx
 ```shell script
-apt install nginx
 apt install -y nginx-extras
 nginx -v
 ```
@@ -99,6 +98,7 @@ sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/
 apt update
 apt install -y php7.3-fpm php7.3-mysql php7.3-curl php7.3-gd php7.3-mbstring php7.3-xml php7.3-xmlrpc php7.3-opcache php7.3-zip php7.3 php7.3-json php7.3-bz2 php7.3-bcmath
 ```
+>Notice: don't install php directly on linux or you will get an extra **apache**
 
 >ps: the command for restarting php is 'systemctl restart php7.3-fpm'
 

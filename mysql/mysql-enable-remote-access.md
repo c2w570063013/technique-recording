@@ -11,3 +11,11 @@ Restart mysql
 /etc/init.d/mysql stop
 /etc/init.d/mysql start
 ``` 
+Or
+```shell script
+systemctl restart mysql
+```
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-latest-mysql-on-debian-10
+
+https://blog.csdn.net/h996666/article/details/80921913

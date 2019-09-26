@@ -14,3 +14,13 @@ expect {
 }
 interact
 ```
+>Notice: if you see something like this after you reinstall the server:
+```shell script
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+``` 
+then regenerate a ssh-key like:
+```shell script
+ssh-keygen -R '45.76.208.129' # the last param is your server_ip
+```
