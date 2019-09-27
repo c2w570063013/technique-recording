@@ -30,6 +30,10 @@ Or running on background
 ```shell script
 ssserver -c /etc/shadowsocks/config.conf -d start
 ``` 
+
+> Notice: If server is pingable, the ssserver already opened and client still not able to connect to ssserver,
+>then consider trying to change your server_port, like 8388 to 10102
+
 ### 4.Enable BBR to increase speed
 Install BBR  
 ```shell script

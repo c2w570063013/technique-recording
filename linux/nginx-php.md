@@ -5,6 +5,9 @@ apt install nginx
 apt install php php-fpm
 ```
 > Notice: php7.0-fpm.sock is located at 'run/php/php7.0-fpm.sock;'
+ 
+> But don't recommend this way for installing php because the apache will be installed coming along with php. Installing
+> php and the extensions separately 
 
 Configure nginx server
 ```shell script
