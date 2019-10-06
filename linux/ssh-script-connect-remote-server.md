@@ -24,3 +24,10 @@ then regenerate a ssh-key like:
 ```shell script
 ssh-keygen -R 45.76.208.129 # the last param is your server_ip
 ```
+
+### prevent auto disconnect
+add two lines to '/etc/ssh/sshd_config'
+```shell script
+ClientAliveInterval 30
+ClientAliveCountMax 3
+```
