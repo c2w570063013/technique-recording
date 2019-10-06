@@ -22,5 +22,5 @@ interact
 ``` 
 then regenerate a ssh-key like:
 ```shell script
-ssh-keygen -R '45.76.208.129' # the last param is your server_ip
+ssh-keygen -R 45.76.208.129 # the last param is your server_ip
 ```

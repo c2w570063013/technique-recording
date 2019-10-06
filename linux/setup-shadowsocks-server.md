@@ -34,6 +34,7 @@ ssserver -c /etc/shadowsocks/config.conf -d start
 > Notice: If server is pingable, the ssserver already opened and client still not able to connect to ssserver,
 >then consider trying to change your server_port, like 8388 to 10102
 
+> BBR is already opened on Debian 9 or higher  
 ### 4.Enable BBR to increase speed
 Install BBR  
 ```shell script
@@ -52,3 +53,8 @@ If the output was like:
 >net.ipv4.tcp_available_congestion_control = reno cubic bbr
  
 means that BBR is running properly.
+
+
+
+### Install V2ray guide
+https://github.com/233boy/v2ray/wiki/V2Ray%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B
