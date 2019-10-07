@@ -31,3 +31,7 @@ add two lines to '/etc/ssh/sshd_config'
 ClientAliveInterval 30
 ClientAliveCountMax 3
 ```
+restart ssh
+```shell script
+systemctl restart ssh
+```
