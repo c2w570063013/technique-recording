@@ -50,3 +50,7 @@ Test!!1
 ```php
 curl ip.gs
 ```
+
+Refer to this article:
+
+https://www.linuxbabe.com/ubuntu/shadowsocks-libev-proxy-server-ubuntu-16-04-17-10
