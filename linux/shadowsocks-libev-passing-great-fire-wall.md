@@ -46,6 +46,11 @@ service polipo stop
 service polipo start
 service polipo status
 ```
+Set http(s) proxy on terminal
+```shell script
+export http_proxy=http://localhost:8123
+export https_proxy=http://localhost:8123
+```
 Test!!1
 ```php
 curl ip.gs
