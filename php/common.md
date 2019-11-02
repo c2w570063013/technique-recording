@@ -12,3 +12,14 @@ function return_json($code,$msg='',$data = '')
     exit(json_encode($array));
 }
 ```
+Find php.ini on linux
+```shell script
+php -i | grep 'php.ini'
+```
+or 
+```shell script
+<?php
+phpinfo();
+```
+### How To Install PHP 7.3 / 7.2 / 7.1 on Debian 10 / Debian 9 & Debian 8
+https://www.itzgeek.com/how-tos/linux/debian/how-to-install-php-7-3-7-2-7-1-on-debian-10-debian-9-debian-8.html
