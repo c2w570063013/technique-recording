@@ -29,3 +29,13 @@ once the server has both apache and nginx. A error may occurs and to solve that 
 sudo apt autoremove
 sudo apt remove apache2*
 ```
+
+Add extensions to php manually 
+```shell script
+phpinfo(); #check out the 'extension_dir' location
+```
+Copy the extension plugin to 'extension_dir', then add extension name to the 'php.ini'
+```shell script
+extension=swoole_loader.so
+```
+
