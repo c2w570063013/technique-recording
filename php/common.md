@@ -23,3 +23,9 @@ phpinfo();
 ```
 ### How To Install PHP 7.3 / 7.2 / 7.1 on Debian 10 / Debian 9 & Debian 8
 https://www.itzgeek.com/how-tos/linux/debian/how-to-install-php-7-3-7-2-7-1-on-debian-10-debian-9-debian-8.html
+
+once the server has both apache and nginx. A error may occurs and to solve that problem. it's better to uninstall Apache.
+```shell script
+sudo apt autoremove
+sudo apt remove apache2*
+```
