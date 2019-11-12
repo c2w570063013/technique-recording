@@ -32,6 +32,9 @@ pip3 install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 ```shell script
 sslocal --v
 ```
+
+>Notice: when you have finished installing, you may found that the execution files are located at the '/home/vagrant/.local/bin'
+
 There you are, yu will see output 'Shadowsocks 3.0.0' on terminal 
 after typing 'sslocal --v'
 
