@@ -1,0 +1,10 @@
+check out if laravel are able to connect to mysql
+```shell script
+//    try {
+//
+//        \Illuminate\Support\Facades\DB::connection()->getPdo();
+//    } catch (\Exception $e) {
+//        die("Could not connect to the database.  Please check your configuration. error:" . $e );
+//    }
+
+```

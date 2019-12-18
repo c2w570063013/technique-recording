@@ -4,6 +4,7 @@ For local development I use Laravel Valet. Recently, the brew packages have upda
 So, here’s the fix. You can create a user with the “old” authentication mechanisme, which the MySQL database driver for PHP still expects.
 >CREATE USER 'ohdear_ci'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ohdear_secret';
  GRANT ALL PRIVILEGES ON ohdear_ci.* TO 'ohdear_ci'@'localhost';
+>SET PASSWORD FOR 'ohdear_ci'@'localhost' = 'wayne';
 
 If you already have an existing user with permissions on databases, you can modify that user instead.
 
