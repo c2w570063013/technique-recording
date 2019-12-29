@@ -22,3 +22,25 @@ php artisan migrate
 php artisan migrate
 
 ```
+laravel tables relation
+```shell script
+public function latestMessages()
+    {
+        return $this->model::query()
+            ->select('content', 'author', 'created_at', 'tv_series_id')
+            ->limit(5)
+            ->get();
+    } 
+
+class MessagesBoard extends Model
+{
+    protected $table = 'messages_board';
+
+    public function series()
+    {
+        return $this->belongsTo('App\Models\Series', 'tv_series_id');
+    }
+}
+```
+like the code showed above, 'tv_series_id' is necessary to be selected to be able to call the 
+'series' relationship... 'tv_series_id' is the foreign_key for the message table
