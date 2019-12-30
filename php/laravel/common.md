@@ -8,3 +8,11 @@ check out if laravel are able to connect to mysql
 //    }
 
 ```
+get id from url on blade
+```shell script
+#route
+Route::get('category/{id?}', 'HomeController@categories');
+
+#blade
+$request->route('id');
+```
