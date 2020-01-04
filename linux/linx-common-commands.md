@@ -32,3 +32,10 @@ scp file.txt remote_username@10.10.0.2:/remote/directory
 ```shell script
 cat /tmp/id_rsa.john.pub >> ~/.ssh/authorized_keys
 ``` 
+
+### ssh auto disconnect solution
+```shell script
+vim /etc/ssh/sshd_config
+# change the following item 
+ClientAliveInterval  60
+```
