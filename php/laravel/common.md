@@ -16,3 +16,7 @@ Route::get('category/{id?}', 'HomeController@categories');
 #blade
 $request->route('id');
 ```
+share a laravel website project to the local network
+```shell script
+sudo php artisan serve --port=80 --host=192.168.0.111
+``` 
