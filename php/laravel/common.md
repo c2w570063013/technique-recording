@@ -20,3 +20,5 @@ share a laravel website project to the local network
 ```shell script
 sudo php artisan serve --port=80 --host=192.168.0.111
 ``` 
+
+.php is not allowed in the route suffix when using https
