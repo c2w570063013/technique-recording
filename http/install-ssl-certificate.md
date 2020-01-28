@@ -20,12 +20,28 @@ ssl files.
 
 6.Download certificate and upload them to your server.
 
-7.Configure your nginx like this:
+7.Combine Certificates Into One File. checkout this article for more detail:https://www.ssls.com/knowledgebase/how-to-install-an-ssl-certificate-on-a-nginx-server/
+```shell script
+cat your_domain.crt your_domain.ca-bundle >> ssl-bundle.crt
+i.e.
+cat crosseverycorner_xyz.crt crosseverycorner_xyz.ca-bundle >> ssl-bundle.crt
+```
+>you may see a error like this "PEM routines:PEM_read_bio:bad end line" which means
+>there is something wrong with your new combined file 'ssl-bundle.crt'. you need to 
+>modify it a little bit like:
+```shell script
+-----END CERTIFICATE----------BEGIN CERTIFICATE-----
+change to
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+```     
+
+8.Configure your nginx like this:
 ```shell script
 server {  
         listen 443 ssl;
         #listen [::]:80;
-        ssl_certificate /home/git/test_crosseverycorner_xyz/test_crosseverycorner_xyz.crt;
+        ssl_certificate /home/git/test_crosseverycorner_xyz/ssl-bundle.crt
         ssl_certificate_key /root/test.crosseverycorner.xyz.key;
         ssl on;
         root /var/www/us-tv-shows/public; # change to your domain
