@@ -53,3 +53,9 @@ adduser wayne sudo
 ```shell script
 nproc --all
 ```
+
+### display memory usage ranking 
+```shell script
+top 
+# then press "shift+m"
+``` 
