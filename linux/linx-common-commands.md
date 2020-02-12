@@ -28,6 +28,8 @@ To copy a file from a local to a remote system run the following command:
 scp file.txt remote_username@10.10.0.2:/remote/directory
 ## using proxy
 scp -o ProxyCommand="nc -X 5 -x 127.0.0.1:7891 %h %p" bit_trade_test.sql git@66.42.40.223:/home/git
+## scp a folder 
+scp -o -r ProxyCommand="nc -X 5 -x 127.0.0.1:7891 %h %p" bit_trade_test.sql git@66.42.40.223:/home/git
 ```
 
 ### inject content of a file into another file
@@ -40,4 +42,14 @@ cat /tmp/id_rsa.john.pub >> ~/.ssh/authorized_keys
 vim /etc/ssh/sshd_config
 # change the following item 
 ClientAliveInterval  60
+```
+
+### add user to root group
+```shell script
+adduser wayne sudo
+```
+
+### check number of cpu core
+```shell script
+nproc --all
 ```
