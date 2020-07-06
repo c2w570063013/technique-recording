@@ -15,4 +15,4 @@ vim ~/.composer/vendor/laravel/valet/cli/Valet/Brew.php
 'php@7.4' 
 ```
 original link:
-https://dev.to/robertobutti/laravel-valet-php-7-4-homebrew-2e2d
+https://dev.to/robertobutti/laravel-wvalet-php-7-4-homebrew-2e2d
