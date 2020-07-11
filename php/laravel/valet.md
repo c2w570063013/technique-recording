@@ -3,6 +3,12 @@
 valete unlink public
 ```
 
+### mac valet 502 Bad Gateway nginx/1.15.8
+```shell script
+composer global update
+valet install
+```
+
 problem:
 ```shell script
 In brew.php line 251.
