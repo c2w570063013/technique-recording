@@ -59,3 +59,11 @@ nproc --all
 top 
 # then press "shift+m"
 ``` 
+
+### add a directory to a path
+```shell script
+#Edit .bashrc in your home directory and add the following line:
+export PATH="/path/to/dir:$PATH"
+# and then source your .bashrc
+source ~/.bashrc
+```

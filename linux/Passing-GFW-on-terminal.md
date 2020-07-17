@@ -28,8 +28,12 @@ apt install python3-pip
 ```shell script
 pip3 install -U git+https://github.com/shadowsocks/shadowsocks.git@master
 ```
+
+- 2.5 sslocal and ssserver are installed on '/home/vagrant/.local/bin'
+
 - 3.Check out the shadowscoks version
 ```shell script
+cd /home/vagrant/.local/bin
 sslocal --v
 ```
 
