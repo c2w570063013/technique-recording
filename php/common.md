@@ -39,3 +39,11 @@ Copy the extension plugin to 'extension_dir', then add extension name to the 'ph
 extension=swoole_loader.so
 ```
 
+Install redis extension in php@7.4 on mac os 
+```shell script
+pecl install redis
+``` 
+then restart php
+```shell script
+brew services restart php
+```
