@@ -1,0 +1,1 @@
+Add the sql file to your project files, right-click this file in the Project view and select "Run {filename}" You will then be asked to select the right database, on which the sql will execute.
