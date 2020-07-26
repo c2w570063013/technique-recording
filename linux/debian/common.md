@@ -31,6 +31,7 @@ sudo dpkg -i mysql-apt-config_0.8.13-1_all.deb
 sudo dpkg-reconfigure mysql-apt-config
 sudo apt update 
 sudo apt install mysql-server
+sudo apt install redis-server
 sudo systemctl restart mysql.service
 sudo mysql_secure_installation
 # install php7.4
@@ -39,10 +40,19 @@ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gp
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
 sudo apt update
 sudo apt -y install php7.4
-sudo apt install -y php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-opcache php7.4-zip php7.4 php7.4-json php7.4-bz2 php7.4-bcmath
+sudo apt install -y php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-opcache php7.4-zip php7.4 php7.4-json php7.4-bz2 php7.4-bcmath php-redis
 # disable Apache service
 sudo systemctl disable --now apache2
+# fix showing Chinese problems
+sudo apt-get install locales
+sudo dpkg-reconfigure locales
+## select "zh_CN UTF-8 UTF-8"
+# modify /etc/default/locale set:
+LANG=en_US.UTF-8
 
+# install Chinese font
+sudo apt-get install ttf-arphic-uming
+sudo apt-get install ttf-wqy-zenhei
 
 ```
 
