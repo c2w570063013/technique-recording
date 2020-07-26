@@ -47,8 +47,6 @@ sudo systemctl disable --now apache2
 sudo apt-get install locales
 sudo dpkg-reconfigure locales
 ## select "zh_CN UTF-8 UTF-8"
-# modify /etc/default/locale set:
-LANG=en_US.UTF-8
 
 # install Chinese font
 sudo apt-get install ttf-arphic-uming
