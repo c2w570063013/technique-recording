@@ -31,6 +31,11 @@ scp -o ProxyCommand="nc -X 5 -x 127.0.0.1:7891 %h %p" bit_trade_test.sql git@66.
 ## scp a folder 
 scp -o -r ProxyCommand="nc -X 5 -x 127.0.0.1:7891 %h %p" bit_trade_test.sql git@66.42.40.223:/home/git
 ```
+Copy a directory from remote to local
+```shell script
+scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
+```
+
 
 ### inject content of a file into another file
 ```shell script

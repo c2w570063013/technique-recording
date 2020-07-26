@@ -10,6 +10,10 @@ chmod u+w /etc/sudoers
 ## add a line "you_name ALL=(ALL) ALL" below "root ALL=(ALL) ALL"
 chmod u-w /etc/sudoers
 
+#set up timezone to Shanghai
+echo "y" |cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
+apt-get install -y ntpdate;ntpdate cn.pool.ntp.org
+date
 # install basic tool
 sudo apt install curl
 sudo apt install vim
@@ -30,6 +34,7 @@ sudo dpkg -i mysql-apt-config_0.8.13-1_all.deb
 # During the installation of MySQL apt config package, It will prompt to select MySQL version to install. Select the MySQL 8.0 or 5.7 option to install on your system.
 sudo dpkg-reconfigure mysql-apt-config
 sudo apt update 
+sudo apt install nodejs npm
 sudo apt install mysql-server
 sudo apt install redis-server
 sudo systemctl restart mysql.service
@@ -40,7 +45,7 @@ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gp
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
 sudo apt update
 sudo apt -y install php7.4
-sudo apt install -y php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-opcache php7.4-zip php7.4 php7.4-json php7.4-bz2 php7.4-bcmath php-redis
+sudo apt install -y php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-opcache php7.4-zip php7.4 php7.4-json php7.4-bz2 php7.4-bcmath php7.4-redis
 # disable Apache service
 sudo systemctl disable --now apache2
 # fix showing Chinese problems
