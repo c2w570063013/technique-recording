@@ -35,6 +35,7 @@ sudo dpkg -i mysql-apt-config_0.8.13-1_all.deb
 sudo dpkg-reconfigure mysql-apt-config
 sudo apt update 
 sudo apt install nodejs npm
+npm install -g pm2
 sudo apt install mysql-server
 sudo apt install redis-server
 sudo systemctl restart mysql.service
@@ -56,6 +57,11 @@ sudo dpkg-reconfigure locales
 # install Chinese font
 sudo apt-get install ttf-arphic-uming
 sudo apt-get install ttf-wqy-zenhei
+
+sudo apt install -y expect
+sudo apt install speedtest-cli
+sudo apt install nethogs
+
 
 ```
 
