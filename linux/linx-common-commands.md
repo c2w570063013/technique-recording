@@ -34,6 +34,8 @@ scp -o -r ProxyCommand="nc -X 5 -x 127.0.0.1:7891 %h %p" bit_trade_test.sql git@
 Copy a directory from remote to local
 ```shell script
 scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
+# With a port 
+scp -P 2222 -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 ```
 
 
