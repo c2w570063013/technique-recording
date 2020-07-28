@@ -79,5 +79,5 @@ source ~/.bashrc
 ```shell script
 telnet ip_address port
 # for instance
-telenet 923.12.3312.2 8080
+telnet 923.12.3312.2 8080
 ```
