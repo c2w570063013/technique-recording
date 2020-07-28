@@ -15,6 +15,7 @@ echo "y" |cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 apt-get install -y ntpdate;ntpdate cn.pool.ntp.org
 date
 # install basic tool
+sudo apt install net-tools
 sudo apt install curl
 sudo apt install vim
 sudo apt install git
