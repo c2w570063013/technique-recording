@@ -74,3 +74,10 @@ export PATH="/path/to/dir:$PATH"
 # and then source your .bashrc
 source ~/.bashrc
 ```
+
+### check whether a port is available 
+```shell script
+telnet ip_address port
+# for instance
+telenet 923.12.3312.2 8080
+```
