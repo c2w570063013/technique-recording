@@ -1,5 +1,16 @@
 ## Mysql enable remote access
-Change mysql table
+## install mysql 5.7 on debian
+https://tecadmin.net/install-mysql-on-debian-10-buster/
+> Warning: don't run mysql_secure_installation after installed mysql-server
+
+1. Edit mysql config
+```shell script
+vim /etc/mysql/mysql.conf.d/mysqld.cnf
+## change "bind-address=127.0.0.1" to "bind-address=0.0.0.0" 
+```
+
+
+2.Change mysql table
 ```shell script
 mysql -u root –p
 mysql>use mysql;

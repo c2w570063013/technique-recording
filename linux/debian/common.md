@@ -2,6 +2,7 @@
 # change apps sources to China
 cp sources.list sources.list_backup
 vim sources.list
+# source link: https://linuxconfig.org/debian-apt-get-buster-sources-list#h22-hong-kong-mirror
 ## then add domestic source links to 'sources.list'
 
 apt update && apt upgrade
@@ -35,6 +36,9 @@ sudo dpkg -i mysql-apt-config_0.8.13-1_all.deb
 # During the installation of MySQL apt config package, It will prompt to select MySQL version to install. Select the MySQL 8.0 or 5.7 option to install on your system.
 sudo dpkg-reconfigure mysql-apt-config
 sudo apt update 
+apt install mysql-server
+# To see more info, checkout here: https://tecadmin.net/install-mysql-on-debian-10-buster/
+
 sudo apt install nodejs npm
 npm install -g pm2
 sudo apt install mysql-server
