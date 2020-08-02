@@ -37,14 +37,13 @@ sudo dpkg -i mysql-apt-config_0.8.13-1_all.deb
 sudo dpkg-reconfigure mysql-apt-config
 sudo apt update 
 apt install mysql-server
+sudo systemctl restart mysql.service
 # To see more info, checkout here: https://tecadmin.net/install-mysql-on-debian-10-buster/
 
+sudo apt install nginx
 sudo apt install nodejs npm
 npm install -g pm2
-sudo apt install mysql-server
 sudo apt install redis-server
-sudo systemctl restart mysql.service
-sudo mysql_secure_installation
 # install php7.4
 sudo apt -y install lsb-release apt-transport-https ca-certificates 
 sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg

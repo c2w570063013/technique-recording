@@ -1,3 +1,19 @@
+# linux compressing and decompressing
+```shell script
+#（注：tar是打包，不是压缩！）
+# 解包
+tar xvf FileName.tar
+# 打包
+tar cvf FileName.tar DirName
+
+# 解压
+unzip FileName.zip
+# 压缩
+zip FileName.zip DirName
+
+#see more: https://blog.csdn.net/tjcyjd/article/details/78267219
+```
+
 ### find out usage disk space of server  
 ```shell script
 df -T -h /
