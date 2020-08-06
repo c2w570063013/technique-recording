@@ -97,3 +97,6 @@ telnet ip_address port
 # for instance
 telnet 923.12.3312.2 8080
 ```
+
+### linux mount new disk
+https://blog.csdn.net/electrocrazy/article/details/61681227
