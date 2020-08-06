@@ -84,7 +84,12 @@ service polipo status
 
 - 8.Start shadowsocks on background
 ```shell script
+# start
 sslocal -c /etc/shadowsocks/config.conf -d start
+# stop
+sslocal -c /etc/shadowsocks/config.conf -d stop
+# don't run at the background
+sslocal -c /etc/shadowsocks/config.conf
 ```
 
 - 9.Export http_proxy and https_proxy on your current terminal to 
