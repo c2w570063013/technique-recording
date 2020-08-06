@@ -25,6 +25,18 @@ then regenerate a ssh-key like:
 ssh-keygen -R 45.76.208.129 # the last param is your server_ip
 ```
 
+>Notice: if you see something like this:
+```shell script
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+```
+then delete your your previous connect record like
+```shell script
+[45.31.216.72]:2222 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIG4gqAK7xzUS1r36AcEIudEGkyVjI6dr8aIgrBQDz2xoYFyFywyEiJt6fj4tvVFWLAhR/Uux24WtLhFFfDJf4U=
+```  
+in '~/.ssh/known_hosts'
+
 ### prevent auto disconnect
 add two lines to '/etc/ssh/sshd_config'
 ```shell script
@@ -34,4 +46,9 @@ ClientAliveCountMax 3
 restart ssh
 ```shell script
 systemctl restart ssh
+```
+
+connect to ssh with a specific port 
+```shell script
+ssh root@192.168.1.2 -p 222
 ```
