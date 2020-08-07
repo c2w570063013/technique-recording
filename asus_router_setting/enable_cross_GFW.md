@@ -9,3 +9,5 @@ sed -i 's/\tdetect_package/\t# detect_package/g' /koolshare/scripts/ks_tar_insta
 finally install the offline package
 
 >original link: https://hq450.github.io/fancyss/
+
+>firmware: https://github.com/hq450/fancyss/tree/master/fancyss_hnd
