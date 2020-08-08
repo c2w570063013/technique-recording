@@ -100,3 +100,5 @@ telnet 923.12.3312.2 8080
 
 ### linux mount new disk
 https://blog.csdn.net/electrocrazy/article/details/61681227
+### mount a 4t disk
+https://www.cnblogs.com/yongpan/p/10919511.html
