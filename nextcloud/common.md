@@ -19,3 +19,7 @@ error: failed to load resource: the server responded with status of 409(conflict
 ```shell script
 clear browser cache
 ```
+
+nextcloud 优化:
+
+https://zhuanlan.zhihu.com/p/50322342

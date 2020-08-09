@@ -99,6 +99,15 @@ telnet 923.12.3312.2 8080
 ```
 
 ### linux mount new disk
+For instance:
+```shell script
+# mount sdb1 to /mnt/usb
+mount /dev/sdb1 /mnt/usb
+
+# umount sdb1
+ umount /mnt/usb
+```
+
 https://blog.csdn.net/electrocrazy/article/details/61681227
 ### mount a 4t disk
 https://www.cnblogs.com/yongpan/p/10919511.html

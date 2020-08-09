@@ -47,3 +47,11 @@ then restart php
 ```shell script
 brew services restart php
 ```
+restart php-fpm on ubuntu/debin
+```shell script
+service php7.4-fpm restart
+```
+php.ini location 
+```shell script
+/etc/php/7.4/fpm/php.ini
+```
