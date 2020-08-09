@@ -33,6 +33,14 @@ sudo smbpasswd -a xxx
 Restart samba
 ```shell script
 sudo /etc/init.d/samba restart
+# if below commmand doesn 't work. run following command.
+/etc/init.d/samba-ad-dc restart
 ```
 On mac's finder, press "cmd+K", Input "smb://samba_address"
 >Notice: samba_address is your samba's ip address 
+
+
+setting permission group to samba user
+```shell script
+usermod -a -G www-data(group) public_share(user)
+```
