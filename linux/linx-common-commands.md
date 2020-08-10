@@ -18,6 +18,16 @@ zip FileName.zip DirName
 ```shell script
 df -T -h /
 ```
+### 查看硬盘剩余空间
+```shell script
+df -hl #查看磁盘剩余空间 
+df -h #查看每个根路径的分区大小 
+du -sh [目录名] #返回该目录的大小 
+du -sm [文件夹] #返回该文件夹总M数
+```
+see more:
+
+https://blog.csdn.net/xiyanlgu/article/details/47007501
 
 ### find the size of a directory
 ```shell script
