@@ -12,4 +12,7 @@ original link: https://hq450.github.io/fancyss/
 
 firmware: https://github.com/hq450/fancyss/tree/master/fancyss_hnd
 
-offline download package: https://github.com/hq450/fancyss_history_package/tree/master/fancyss_hnd  
+offline download package: https://github.com/hq450/fancyss_history_package/tree/master/fancyss_hnd
+
+### remove ads from Router
+https://www.hotbak.net/key/华硕梅林去广告.html  
