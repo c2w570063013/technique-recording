@@ -87,4 +87,14 @@ server {
 ```
 
 
+
+### 注意，有些问题。如果是迁移过来的项目。登录的时候数据库报错，如:
+```shell script
+请求失败 SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+```
+则可以执行:
+```shell script
+php artisan config:clear
+```
+
 Done!

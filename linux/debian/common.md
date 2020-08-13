@@ -51,6 +51,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /et
 sudo apt update
 sudo apt -y install php7.4
 sudo apt install -y php7.4-fpm php7.4-mysql php7.4-curl php7.4-gd php7.4-mbstring php7.4-xml php7.4-xmlrpc php7.4-opcache php7.4-zip php7.4 php7.4-json php7.4-bz2 php7.4-bcmath php7.4-redis,php7.4-smbclient
+sudo apt install -y php7.4-{fpm,mysql,curl,gd,mbstring,xml,xmlrpc,opcache,zip,json,bz2,bcmath,redis,smbclient}
 # disable Apache service
 sudo systemctl disable --now apache2
 # fix showing Chinese problems
