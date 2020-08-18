@@ -18,3 +18,8 @@ mysql -u [username] -p newdatabase < [database name].sql
 
 mysql -u root -p test_tv_shows < bit_trade_test.sql
 ```
+
+### connect to remote mysql
+````shell script
+mysql -h 119.25.49.110 -P 3306 -u root -p
+````
