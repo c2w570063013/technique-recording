@@ -1,3 +1,6 @@
+### set up git server
+https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664
+
 ### gen ssh key on linux
 ```shell script
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -65,5 +68,6 @@ Git pull
 Git checkout new_mobile
 Git merge master
 Git push
-
+# git set remote url
+git remote set-url origin https://hostname/USERNAME/REPOSITORY.git
 ```
