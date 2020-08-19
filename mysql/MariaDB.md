@@ -1,3 +1,10 @@
+### set up root password
+```shell script
+mysql> set password for username@localhost = password('new_pwd');
+# for example
+mysql> set password for root@localhost = password('123'); 
+```
+
 ### enable remote connection
 ```shell script
 cat /etc/mysql/mariadb.cnf
