@@ -97,4 +97,11 @@ server {
 php artisan config:clear
 ```
 
+### 对接gmail 之后，记得重启队列
+```shell script
+pm2 stop pm2.yaml
+pm2 start pm2.yaml
+```
+
+
 Done!

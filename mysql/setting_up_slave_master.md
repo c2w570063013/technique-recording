@@ -71,7 +71,7 @@ log_bin_trust_function_creators = 1
 2、重启MySQL，创建允许从服务器同步数据的账户
 ```shell script
 # 创建slave账号account，密码123456
-
+create user 创建slave账号account identified by '密码123456';
 # 赋予account权限
 mysql>grant replication slave on *.* to 'account'@'10.10.20.116' identified by '123456';
 #更新数据库权限
@@ -79,7 +79,7 @@ mysql>flush privileges;
 ```
 3、查看主服务器状态
 ```shell script
-mysql>show master status\G;
+mysql>show master status\G
 ***************** 1. row ****************
             File: mysql-bin.000033 #当前记录的日志
         Position: 337523 #日志中记录的位置  
@@ -110,6 +110,8 @@ replicate-do-db = db
 slave-net-timeout = 60                    
 log_bin_trust_function_creators = 1
 ```
+重启从服务器
+
 2、执行同步命令
 ```shell script
 #执行同步命令，设置主服务器ip，同步账号密码，同步位置
@@ -119,7 +121,7 @@ mysql>start slave;
 ```
 3、查看从服务器状态
 ```shell script
-mysql>show slave status\G;
+mysql>show slave status\G
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
                   Master_Host: 10.10.20.111
@@ -143,6 +145,11 @@ Slave_IO_Running及Slave_SQL_Running进程必须正常运行，即Yes状态，�
 
 
 > PS: log-bin = mysql-bin 中 mysql-bin 的默认位置为: /var/lib/mysql
+
+
+>PS: 要记住主从服务器的端口要要保持一致，如3306
+>至于更改端口号，我还没试过
+
 
 #### 备份文章的来源
 https://www.jianshu.com/p/b0cf461451fb
