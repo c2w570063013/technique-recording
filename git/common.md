@@ -29,7 +29,7 @@ git show stash@{0} # see the last stash
 
 git stash pop stash@{0}
 
-Git stash can not store new created file. This function can only be used to store the changes of existing files.
+git stash can not store new created file. This function can only be used to store the changes of existing files.
 
 
 git checkout -b asdw origin/asdw (生成本地分支 关联远程分支 并且切换到asdw这个分支)
@@ -55,19 +55,24 @@ The much dangerous way is:
 
 Transferred from note (2)
 ```shell script
-Git creat new branch
+git creat new branch
 
-Git checkout origin/master
-Git checkout -b new_mobile
-Git push
-Git push —set-upstream origin new_mobile
+git checkout origin/master
+git checkout -b new_mobile
+git push
+git push —set-upstream origin new_mobile
 
 Switch to master
-Git checkout master 
-Git pull
-Git checkout new_mobile
-Git merge master
-Git push
+git checkout master 
+git pull
+git checkout new_mobile
+git merge master
+git push
 # git set remote url
+# first the first time
+git remote add origin https://hostname/USERNAME/REPOSITORY.git
+# change remote url
 git remote set-url origin https://hostname/USERNAME/REPOSITORY.git
+# git push for the first time
+git push --set-upstream origin master
 ```
