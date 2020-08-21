@@ -70,9 +70,7 @@ log_bin_trust_function_creators = 1
 ```
 2、重启MySQL，创建允许从服务器同步数据的账户
 ```shell script
-# 创建slave账号account，密码123456
-create user 创建slave账号account identified by '密码123456';
-# 赋予account权限
+# 已经包含了创建账号
 mysql>grant replication slave on *.* to 'account'@'10.10.20.116' identified by '123456';
 #更新数据库权限
 mysql>flush privileges;
