@@ -1,3 +1,8 @@
+### install mariaDB
+```shell script
+apt-get install mariadb-server
+```
+
 ### set up root password
 ```shell script
 mysql> set password for username@localhost = password('new_pwd');

@@ -103,5 +103,15 @@ pm2 stop pm2.yaml
 pm2 start pm2.yaml
 ```
 
+Docker Problem:
+```shell script
+ERROR: Failed to Setup IP tables: Unable to enable SKIP DNAT rule:  
+(iptables failed: iptables --wait -t nat -I DOCKER -i br-09592cb0f41d -j RETURN: iptables v1.8.2 
+(nf_tables): Chain 'DOCKER' does not exist
+```
+solution:
+```shell script
+service docker restart
+```
 
 Done!

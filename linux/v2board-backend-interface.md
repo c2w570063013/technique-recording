@@ -76,6 +76,14 @@ dc logs
 ```
 9、回到前端v2board面板网站，可以看到刚才添加的节点状态显示蓝色，表示已对接成功，红色则对接失败检查故障，最后打开显隐开关连接节点测试。
 
+### Problem: 
+```shell script
+dc logs #会看到如下错误日志
+2020/08/21 20:52:19 [Error] V2ray-Poseidon: failed to update geoip.dat and geosite.dat from https://github.com/Loyalsoldier/v2ray-rules-dat > fail to download geoip.dat > Get "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat": dial tcp: lookup cdn.jsdelivr.net on 127.0.0.11:53: read udp 127.0.0.1:41614->127.0.0.11:53: i/o timeout
+
+### 解决办法。
+# 重启服务器
+```
 
 原文链接:https://zhujiget.com/4073.html
 
