@@ -52,3 +52,15 @@ connect to ssh with a specific port
 ```shell script
 ssh root@192.168.1.2 -p 222
 ```
+
+take attention to the port 
+```
+kex_exchange_identification: Connection closed by remote host
+spawn_id: spawn id exp6 not open
+    while executing
+"interact"
+    (file "/Users/bobjames/mack_bash_manually/expect/hk2" line 14)
+
+
+##1086 or 7891 
+```
