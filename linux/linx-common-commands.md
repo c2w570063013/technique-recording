@@ -121,3 +121,8 @@ mount /dev/sdb1 /mnt/usb
 https://blog.csdn.net/electrocrazy/article/details/61681227
 ### mount a 4t disk
 https://www.cnblogs.com/yongpan/p/10919511.html
+
+### linux delete history 
+echo > /root/.bash_history
+source /root/.bash_history
+history -c
