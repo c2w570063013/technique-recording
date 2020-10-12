@@ -126,3 +126,6 @@ https://www.cnblogs.com/yongpan/p/10919511.html
 echo > /root/.bash_history
 source /root/.bash_history
 history -c
+
+### linux suffered from computer virus and fix it, tsm
+https://blog.csdn.net/adsszl_no_one/article/details/105344467
