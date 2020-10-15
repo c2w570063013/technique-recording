@@ -129,3 +129,7 @@ history -c
 
 ### linux suffered from computer virus and fix it, tsm
 https://blog.csdn.net/adsszl_no_one/article/details/105344467
+
+### linux get malicious mining virus
+key: kswapd0
+https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/ 
