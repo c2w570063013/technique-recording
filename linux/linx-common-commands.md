@@ -137,4 +137,6 @@ https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/
 ### check out ports occupation
 ```shell script
 lsof -i:5601
+lsof -i|grep 5601
+netstat -tunlp|grep 5601
 ```
