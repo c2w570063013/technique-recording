@@ -140,3 +140,8 @@ lsof -i:5601
 lsof -i|grep 5601
 netstat -tunlp|grep 5601
 ```
+
+### check history login records
+```shell script
+who /var/log/wtmp
+```
