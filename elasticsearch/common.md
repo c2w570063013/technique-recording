@@ -12,4 +12,8 @@ Elasticsearch: Bulk request throws error
   },
   "status" : 400
 ```
+execute:
+```shell script
+curl -H "Content-Type: application/json" -XPOST "localhost:9200/bank/_bulk?pretty&refresh" --data-binary "@accounts.json"
+```
 solution: Add empty line at the end of the JSON file and save the file and then try to run the below command

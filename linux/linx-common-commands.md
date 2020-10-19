@@ -132,4 +132,9 @@ https://blog.csdn.net/adsszl_no_one/article/details/105344467
 
 ### linux get malicious mining virus
 key: kswapd0
-https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/ 
+https://codenie.github.io/post/kswapd0-wa-kuang-bing-du-cha-sha-guo-cheng/
+
+### check out ports occupation
+```shell script
+lsof -i:5601
+```
