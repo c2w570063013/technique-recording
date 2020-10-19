@@ -145,3 +145,8 @@ netstat -tunlp|grep 5601
 ```shell script
 who /var/log/wtmp
 ```
+
+### check the specific running process
+```shell script
+ps aux | grep mysqld 
+```
