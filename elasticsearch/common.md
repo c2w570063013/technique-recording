@@ -21,4 +21,5 @@ solution: Add empty line at the end of the JSON file and save the file and then 
 ###check weather kibana process is running 
 ```shell script
 ps -ef|grep kibana
+ps -aux|grep kibana
 ```
