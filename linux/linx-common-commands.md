@@ -150,3 +150,8 @@ who /var/log/wtmp
 ```shell script
 ps aux | grep mysqld 
 ```
+
+### prevent automatically disconnection
+```shell script
+ssh -o ServerAliveInterval=30 user@host    
+```

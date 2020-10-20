@@ -22,3 +22,7 @@ solution: Add empty line at the end of the JSON file and save the file and then 
 ```shell script
 ps -ef|grep kibana
 ```
+### check es with the authentication 
+```shell script
+curl --user username:ped -X GET 'http://localhost:9200/_cat/indices?v'
+```
