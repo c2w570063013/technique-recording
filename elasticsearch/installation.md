@@ -29,3 +29,18 @@ sudo systemctl stop kibana.service
 ```shell script
 /etc/kibana/kibana.yml
 ```
+
+### upgrade elasticsearch on centos
+```shell script
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.9.2-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.9.2-x86_64.rpm.sha512
+shasum -a 512 -c elasticsearch-7.9.2-x86_64.rpm.sha512
+# if there is shasum command, install it
+yum install perl-Digest-SHA
+
+### upgrade es
+rpm -Uvh elasticsearch.rpm
+
+### install. PS: it's not a command for upgrading, or you'll get lot's of conflicts 
+sudo rpm --install elasticsearch-7.9.2-x86_64.rpm
+```
