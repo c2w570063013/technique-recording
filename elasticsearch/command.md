@@ -17,3 +17,12 @@ see nodes info
 ```shell script
 GET /_nodes
 ```
+
+start filebeat at background
+```shell script
+cd filebeat/
+./filebeat -c filebeat.yml &
+
+# ps start filebeat at current window
+./filebeat -e
+```
