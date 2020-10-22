@@ -155,3 +155,11 @@ ps aux | grep mysqld
 ```shell script
 ssh -o ServerAliveInterval=30 user@host    
 ```
+
+### linux kill pts
+```shell script
+# you'll see what pts you are currently using
+tty
+# then you can kill it 
+pkill -9 -t pts/3
+```
