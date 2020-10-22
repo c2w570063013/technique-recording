@@ -163,3 +163,9 @@ tty
 # then you can kill it 
 pkill -9 -t pts/3
 ```
+
+### Install deb package on debian
+```shell script
+sudo dpkg -i /path/to/deb/file
+sudo apt-get install -f
+```
