@@ -31,6 +31,10 @@ start logstash which was installed by deb package
 ```shell script
 cd /usr/share/logstash
 bin/logstash -f logstash.conf
+
+# in reality we should run it with absolute path
+bin/logstash -f /etc/logstash/conf.d/redis.conf
+
 # On deb and rpm, you place the pipeline configuration files in the /etc/logstash/conf.d directory. 
 # Logstash tries to load only files with .conf extension in the /etc/logstash/conf.d directory and ignores all other files
 ```  
