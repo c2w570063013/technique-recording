@@ -169,3 +169,11 @@ pkill -9 -t pts/3
 sudo dpkg -i /path/to/deb/file
 sudo apt-get install -f
 ```
+
+### solve past content to terminal with indent problem
+```shell script
+# using echo 
+echo '
+content
+' > file.text
+```
