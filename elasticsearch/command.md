@@ -34,3 +34,11 @@ bin/logstash -f logstash.conf
 # On deb and rpm, you place the pipeline configuration files in the /etc/logstash/conf.d directory. 
 # Logstash tries to load only files with .conf extension in the /etc/logstash/conf.d directory and ignores all other files
 ```  
+let filebeat recollect logs from the beginning 
+```shell script
+cd filebeat/
+rm data/registry
+
+# ps: Since Filebeat stores the state of each file it harvests in the registry, deleting the registry file forces Filebeat to read all the files it’s harvesting from scratch.
+./filebeat -e -c filebeat.yml -d "publish"
+```
