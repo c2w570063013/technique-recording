@@ -27,3 +27,7 @@ ps -aux|grep kibana
 ```shell script
 curl --user username:ped -X GET 'http://localhost:9200/_cat/indices?v'
 ```
+### general logstash datetime formats\
+```shell script
+ISO8601
+```

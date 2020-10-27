@@ -48,3 +48,11 @@ rm data/registry
 # ps: Since Filebeat stores the state of each file it harvests in the registry, deleting the registry file forces Filebeat to read all the files it’s harvesting from scratch.
 ./filebeat -e -c filebeat.yml -d "publish"
 ```
+list specific indexes with prefix
+```shell script
+GET /_cat/indices/logstash-zk*?v&s=index
+```
+show indices storage usage
+```shell script
+GET _cat/allocation?v&pretty
+```
