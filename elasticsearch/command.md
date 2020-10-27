@@ -36,6 +36,8 @@ bin/logstash -f logstash.conf
 bin/logstash -f /etc/logstash/conf.d/redis.conf
 ## input to darkwhole 
 bin/logstash -f /etc/logstash/conf.d/redis.conf >/dev/null &
+## also see
+/dev/null 2>&1
 
 # On deb and rpm, you place the pipeline configuration files in the /etc/logstash/conf.d directory. 
 # Logstash tries to load only files with .conf extension in the /etc/logstash/conf.d directory and ignores all other files
