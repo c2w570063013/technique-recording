@@ -30,3 +30,9 @@ use mysql;
 update user set authentication_string=PASSWORD("your password") where User='root';
 flush privileges;
 ```
+
+### mysql check storage path 
+```shell script
+show variables like '%dir%';
+# you'll see 'datadir'
+```
