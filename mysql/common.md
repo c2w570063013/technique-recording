@@ -23,3 +23,10 @@ mysql -u root -p test_tv_shows < bit_trade_test.sql
 ````shell script
 mysql -h 119.25.49.110 -P 3306 -u root -p
 ````
+
+### change mysql 5.7 password
+```shell script
+use mysql;
+update user set authentication_string=PASSWORD("your password") where User='root';
+flush privileges;
+```
