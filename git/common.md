@@ -1,3 +1,20 @@
+Set up an empty remote git repository(on server side):
+```shell script
+mkdir project.git
+cd project.git
+git init --bare
+# Initialized empty Git repository in /srv/git/project.git/
+```
+Set up an local git repository(on client side):
+```shell script
+cd my_project
+git init
+git add .
+git commit -m 'initial commit'
+git remote add origin git@gitserver:/srv/git/project.git
+git push origin master
+```
+
 ### set up git server
 https://www.liaoxuefeng.com/wiki/896043488029600/899998870925664
 
@@ -75,4 +92,11 @@ git remote add origin https://hostname/USERNAME/REPOSITORY.git
 git remote set-url origin https://hostname/USERNAME/REPOSITORY.git
 # git push for the first time
 git push --set-upstream origin master
+```
+
+.gitignore doesn’t work
+```shell script
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
 ```
