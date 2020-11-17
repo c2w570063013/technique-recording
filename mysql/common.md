@@ -36,3 +36,8 @@ flush privileges;
 show variables like '%dir%';
 # you'll see 'datadir'
 ```
+### mysql set variable
+```shell script
+set @latestHeight = (select height from block_reward order by id desc limit 1);
+select count(*) from block_reward where miner='f02770' and height>@latestHeight;
+```
