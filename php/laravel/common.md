@@ -22,3 +22,11 @@ sudo php artisan serve --port=80 --host=192.168.0.111
 ``` 
 
 .php is not allowed in the route suffix when using https
+
+laravel 访问除主页之外404的问题 <br>
+解决: 在nginx配置中加入以下内容
+```shell script
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+```
