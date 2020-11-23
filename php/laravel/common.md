@@ -30,3 +30,7 @@ location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
 ```
+将 Laravel 用户密码加密方式修改为 md5+salt 方式
+```shell script
+https://learnku.com/articles/23760
+```
