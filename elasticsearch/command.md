@@ -58,3 +58,27 @@ show indices storage usage
 ```shell script
 GET _cat/allocation?v&pretty
 ```
+delete by query
+```shell script
+POST /logstash-sealer-*/_delete_by_query
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "log_type": "failed"
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "match": {
+            "message": "replace"
+          }
+        }
+      ]
+    }
+  }
+}
+```
