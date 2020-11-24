@@ -34,3 +34,7 @@ location / {
 ```shell script
 https://learnku.com/articles/23760
 ```
+laravel 动态获取env 文件
+```shell script
+https://www.cnblogs.com/shiwenhu/p/12461048.html
+```
