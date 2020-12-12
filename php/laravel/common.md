@@ -38,3 +38,8 @@ laravel 动态获取env 文件
 ```shell script
 https://www.cnblogs.com/shiwenhu/p/12461048.html
 ```
+
+How to setup Multi-Auth for Laravel APIs
+```shell
+https://medium.com/@toby.okeke/how-to-setup-multi-auth-for-laravel-apis-cb4203d3d82e
+```
