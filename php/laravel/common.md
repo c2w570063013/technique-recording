@@ -43,3 +43,11 @@ How to setup Multi-Auth for Laravel APIs
 ```shell
 https://medium.com/@toby.okeke/how-to-setup-multi-auth-for-laravel-apis-cb4203d3d82e
 ```
+
+laravel passport token remember add a json hearder
+```shell
+# on postman you should add the following to the header
+accept appliction/json
+# if you add this following to the hearder, it won't work!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!it took me a long time to figure it out!!
+Content-Type appliction/json
+```
