@@ -5,7 +5,7 @@
 openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
 ```
 >Notice: you have to input the 'server name' while on the 
->process of filling out the basic info. e.g.: crosseveryconrner.com
+>process of filling out the basic info. e.g.: crosseveryconrner.xyz
 
 3.Copy the server.csr generated on last step to the https://www.namecheap.com to activate the ssl.
 
