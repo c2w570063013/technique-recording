@@ -82,3 +82,32 @@ POST /logstash-sealer-*/_delete_by_query
   }
 }
 ```
+
+count aggregation bucket number:
+```shell
+GET /logstash-sealer*/_search
+{
+  "aggs": {
+    "aaa": {
+      "terms": {
+        "field": "host.name.keyword",
+        "size": 1
+      }
+    },
+    "count":{
+      "cardinality": {
+        "field": "host.name.keyword"
+      }
+    }
+  },
+  "query": {
+    "range": {
+      "timestamp": {
+        "gte": "2020-12-01",
+        "lte": "2020-12-28"
+      }
+    }
+  }, 
+  "size": 0
+}
+```

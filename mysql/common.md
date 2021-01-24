@@ -41,3 +41,10 @@ show variables like '%dir%';
 set @latestHeight = (select height from block_reward order by id desc limit 1);
 select count(*) from block_reward where miner='f02770' and height>@latestHeight;
 ```
+
+### create a new mysql user and grant all permissions to this user on a specific database
+```shell
+create user 'remote-user2'@'%' identified by 'new_password';
+grant ALL PRIVILEGES on distributed_cloud.* to 'remote-user2'@'%';
+FLUSH PRIVILEGES;
+```
