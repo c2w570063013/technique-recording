@@ -111,3 +111,18 @@ GET /logstash-sealer*/_search
   "size": 0
 }
 ```
+
+Cluster Setting
+解决:
+this action would add [2] total shards, but this cluster currently has [999]/[1000] maximum shards open
+```shell script
+GET _cluster/settings
+
+
+PUT _cluster/settings
+{
+  "persistent": {
+    "cluster.max_shards_per_node": "3000"
+  }
+}
+```
