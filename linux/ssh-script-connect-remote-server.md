@@ -64,3 +64,8 @@ spawn_id: spawn id exp6 not open
 
 ##1086 or 7891 
 ```
+
+密钥授权
+```shell script
+chmod 0400 key.key
+```
