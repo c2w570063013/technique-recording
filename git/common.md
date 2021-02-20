@@ -100,3 +100,11 @@ git rm -r --cached .
 git add .
 git commit -m "fixed untracked files"
 ```
+
+linux git save password and username 
+```shell
+Run:
+git config --global credential.helper store
+then:
+git pull
+```
