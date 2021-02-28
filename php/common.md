@@ -55,3 +55,8 @@ php.ini location
 ```shell script
 /etc/php/7.4/fpm/php.ini
 ```
+
+list php extension
+```shell
+php -m
+```
