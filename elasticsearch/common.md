@@ -31,3 +31,9 @@ curl --user username:ped -X GET 'http://localhost:9200/_cat/indices?v'
 ```shell script
 ISO8601
 ```
+
+fix a problem by running this:
+>ps: this action would add [2] total shards, but this cluster currently has [1000]/[1000] maximum shards open
+```shell
+curl --user elastic:xPm1htPa1CdmnTwJylZP -X PUT http://172.21.234.1:9200/_cluster/settings -H "Content-Type: application/json" -d '{ "persistent": { "cluster.max_shards_per_node": "3000" } }'
+```
