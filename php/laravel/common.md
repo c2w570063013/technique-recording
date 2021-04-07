@@ -98,3 +98,9 @@ class Handler extends ExceptionHandler
     }
 }
 ```
+
+laravel get raw sql query 
+```phpt
+DB::enableQueryLog(); // Enable query log
+dd(DB::getQueryLog()); // Show results of log
+```
