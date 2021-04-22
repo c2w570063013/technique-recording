@@ -126,3 +126,21 @@ PUT _cluster/settings
   }
 }
 ```
+解决返回最大条数10000条
+```shell
+PUT _settings
+{
+  "index.max_result_window": 200000
+}
+```
+elasticsearch add mapping field
+```shell
+PUT logstash-sealer-zktime*/_mapping
+{
+  "properties": {
+    "time.hm": {
+      "type": "long"
+    }
+  }
+}
+```
