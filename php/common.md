@@ -60,3 +60,8 @@ list php extension
 ```shell
 php -m
 ```
+
+To get the current memory_limit value, run:
+```shell
+php -r "echo ini_get('memory_limit').PHP_EOL;"
+```
