@@ -65,3 +65,17 @@ To get the current memory_limit value, run:
 ```shell
 php -r "echo ini_get('memory_limit').PHP_EOL;"
 ```
+
+mac brew php memory increase limit
+```shell
+php -r "echo ini_get('memory_limit').PHP_EOL;"
+
+php --ini
+# you'll see a line showing below like 
+/opt/homebrew/etc/php/7.4/conf.d/php-memory-limits.ini
+# edit this line 
+memory_limit = 2000M
+
+# restart php
+brew services restart php
+```
