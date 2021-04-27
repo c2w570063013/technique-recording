@@ -12,6 +12,8 @@ valet on-latest-version
 php-redis problem
 
 ```shell
+# check out php version first 
+# phpinfo();
 pecl install redis
 php --ini
 # edit /opt/homebrew/etc/php/7.4/php.ini 
