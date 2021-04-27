@@ -8,3 +8,14 @@ valet use php@7.4 --force
 # optional: you can also run this command at the beginning if it still doesn't work after running the above commands
 valet on-latest-version
 ``` 
+
+php-redis problem
+
+```shell
+pecl install redis
+php --ini
+# edit /opt/homebrew/etc/php/7.4/php.ini 
+# remove redundant extension="redis.so", only remain one line for this
+valet install
+valet use php@7.4 --force
+```
