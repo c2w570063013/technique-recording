@@ -21,3 +21,8 @@ php --ini
 valet install
 valet use php@7.4 --force
 ```
+
+when you restart Mac os system, remember to type this command
+```shell
+valet use php@7.4 --force
+```
