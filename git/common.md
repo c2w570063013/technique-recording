@@ -108,3 +108,7 @@ git config --global credential.helper store
 then:
 git pull
 ```
+problem: fatal: Not possible to fast-forward, aborting.
+```shell
+git pull origin bpool-dev --rebase
+```
