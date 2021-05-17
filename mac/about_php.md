@@ -28,3 +28,15 @@ valet use php@7.4 --force
 # if it hints this and run this command
 composer global update
 ```
+
+install xdebug
+```shell
+# intel mac
+brew update
+pecl install xdebug
+
+# or m1 mac
+arch -x86_64 sudo pecl install xdebug
+
+valet use php@7.4 --force
+```
