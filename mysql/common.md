@@ -48,3 +48,9 @@ create user 'remote-user2'@'%' identified by 'new_password';
 grant ALL PRIVILEGES on distributed_cloud.* to 'remote-user2'@'%';
 FLUSH PRIVILEGES;
 ```
+
+### connect to a remote mysql
+```shell
+mysql -u root -P 3306 -h 61.141.65.181 -p
+```
+
