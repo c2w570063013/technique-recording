@@ -104,3 +104,8 @@ laravel get raw sql query
 DB::enableQueryLog(); // Enable query log
 dd(DB::getQueryLog()); // Show results of log
 ```
+
+```shell
+# notice that rank need to add `` 
+$orm = self::query()->selectRaw('id,title,`rank`,is_enable,create_time,update_time,type,image')
+```
