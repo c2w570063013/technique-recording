@@ -114,3 +114,12 @@ laravel Class 'Redis' not found
 ```shell
 apt install php-redis
 ```
+
+composer 设置阿里云源
+```shell
+composer config repo.packagist composer https://mirrors.aliyun.com/composer/
+
+# 取消当前项目配置
+composer config --unset repos.packagist
+
+```
