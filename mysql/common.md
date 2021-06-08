@@ -64,3 +64,8 @@ Importing database: Use mysql_version to avoid Unknown collation: 'utf8mb4_0900_
 # fix
 Opened the dump.sql file in Notepad++ and hit CTRL+H to find and replace the string “utf8mb4_0900_ai_ci” and replaced it with “utf8mb4_general_ci“.
 ```
+
+laravel could not find driver mysql 
+```shell
+apt install php-mysql
+```
