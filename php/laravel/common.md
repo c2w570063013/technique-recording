@@ -109,3 +109,8 @@ dd(DB::getQueryLog()); // Show results of log
 # notice that rank need to add `` 
 $orm = self::query()->selectRaw('id,title,`rank`,is_enable,create_time,update_time,type,image')
 ```
+
+laravel Class 'Redis' not found
+```shell
+apt install php-redis
+```
