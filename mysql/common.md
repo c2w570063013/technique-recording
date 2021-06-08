@@ -19,6 +19,11 @@ mysql -u [username] -p newdatabase < [database name].sql
 mysql -u root -p test_tv_shows < bit_trade_test.sql
 ```
 
+### import to remote db
+```shell
+mysql -h 11.2231.121212 -u root -p db_test < new_db.sql 
+```
+
 ### connect to remote mysql
 ````shell script
 mysql -h 119.25.49.110 -P 3306 -u root -p
@@ -54,3 +59,8 @@ FLUSH PRIVILEGES;
 mysql -u root -P 3306 -h 61.141.65.181 -p
 ```
 
+Importing database: Use mysql_version to avoid Unknown collation: 'utf8mb4_0900_ai_ci'
+```shell
+# fix
+Opened the dump.sql file in Notepad++ and hit CTRL+H to find and replace the string “utf8mb4_0900_ai_ci” and replaced it with “utf8mb4_general_ci“.
+```
