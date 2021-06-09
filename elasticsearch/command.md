@@ -144,3 +144,13 @@ PUT logstash-sealer-zktime*/_mapping
   }
 }
 ```
+
+搭建es。使用局域网ip的时候，记得添加以下这行
+```shell
+# /etc/elasticsearch/elasticsearch.yml
+network.host: 172.26.231.1
+http.port: 9200
+# 关键行
+cluster.initial_master_nodes: ["node-1", "node-2"]
+
+```
