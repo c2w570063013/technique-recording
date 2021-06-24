@@ -133,3 +133,15 @@ composer remove package
 ```shell
 composer remove myxtype/ethereum-client
 ```
+
+composer require package 报版本兼容问题，解决方式
+```shell
+# 报错大概如下
+myxtype/ethereum-client dev-master requires guzzlehttp/guzzle ^6.3 -> found guzzlehttp/guzzle[6.3.0, ..., 6.5.x-dev] but it conflicts with your root composer.json require (7.0.1).
+# 解决方式 将原先的package 加as
+"guzzlehttp/guzzle": "6.5.5 as 7.0",
+# 再执行 composer update
+
+# 最后再运行安装那个package
+composer require iexbase/tron-api
+```
