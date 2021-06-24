@@ -123,3 +123,13 @@ composer config repo.packagist composer https://mirrors.aliyun.com/composer/
 composer config --unset repos.packagist
 
 ```
+
+composer required specified version
+```shell
+composer require guzzlehttp/guzzle 7.0.1
+```
+
+composer remove package 
+```shell
+composer remove myxtype/ethereum-client
+```
