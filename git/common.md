@@ -112,3 +112,9 @@ problem: fatal: Not possible to fast-forward, aborting.
 ```shell
 git pull origin bpool-dev --rebase
 ```
+
+fatal: unable to access 'https://github.com/ohmyzsh/ohmyzsh.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+There was an error updating. Try again later?
+```shell
+git config --global --add remote.origin.proxy "127.0.0.1:7890"
+```
