@@ -7,7 +7,7 @@ sudo npm install --global yarn
 yarn -v 
 # get into project
 cd project
-# initial project
+# initial project, and you will see node_modules
 yarn
 
 # lunch app
