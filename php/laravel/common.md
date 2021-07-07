@@ -145,3 +145,10 @@ myxtype/ethereum-client dev-master requires guzzlehttp/guzzle ^6.3 -> found guzz
 # 最后再运行安装那个package
 composer require iexbase/tron-api
 ```
+
+后端无法接收到前端传的数据,前端传的是raw数据
+![img.png](img.png)
+则前端必须在header上 加上
+```shell
+Content-Type: application/json
+```
