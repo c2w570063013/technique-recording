@@ -10,6 +10,6 @@ cd project
 # initial project, and you will see node_modules
 yarn
 
-# lunch app
+# lunch app # lunch app ps: check 'package.json' you'll find scripts: 'serve'
 yarn serve
 ```
